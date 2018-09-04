@@ -1,4 +1,4 @@
-package sample;
+package edu.ung.mccb.csci.csci3300.SecurePoll.model;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -8,7 +8,7 @@ import java.security.NoSuchAlgorithmException;
         public String generatePasswordHash(String passwordToHash){
             String generatedPasswordHash = null;
             try {
-                MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+                MessageDigest messageDigest = MessageDigest.getInstance("SHA-512");
                 messageDigest.update(passwordToHash.getBytes(StandardCharsets.UTF_8));
                 // messageDiget.update(salt.getBytes(StandardCharsets.UTF_8));
                 byte[] bytes = messageDigest.digest();

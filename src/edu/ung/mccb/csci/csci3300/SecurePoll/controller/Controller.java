@@ -1,5 +1,6 @@
-package sample;
+package edu.ung.mccb.csci.csci3300.SecurePoll.controller;
 
+import edu.ung.mccb.csci.csci3300.SecurePoll.model.Model;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
